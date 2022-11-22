@@ -305,6 +305,7 @@ const handleInputConfirm = () => {
 <style scoped lang="scss">
 .rightSidebar {
   width: 100%;
+  flex: 1;
   background-color: #f9f9f9;
 }
 
