@@ -184,7 +184,7 @@ const selectItem = (key: string, keyPath: string[], item: string) => {
 
 <style scoped lang="scss">
 .sidebar-box {
-  width: 220px;
+  width: 100%;
   height: 100%;
   overflow: hidden;
   position: relative;

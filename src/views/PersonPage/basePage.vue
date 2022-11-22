@@ -55,6 +55,7 @@ import rightSidebar from './rightSidebar.vue';
 .main {
   width: 100%;
   display: flex;
+  flex: 2;
   .right-box {
     right: 0;
     width: 268px;

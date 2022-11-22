@@ -15,7 +15,7 @@
     "pinia": "^2.0.18",
     "postcss-plugin-px2rem": "^0.8.1",
     "vue": "^3.2.25",
-    "vue-router": "^4.1.3"
+    "vue-router": "^4.1.6"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.4",
