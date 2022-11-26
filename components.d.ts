@@ -7,8 +7,13 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
-    BasePage: typeof import('./src/components/personPage/basePage.vue')['default']
-    Classify: typeof import('./src/components/classify/index.vue')['default']
+    Achievement: typeof import('./src/components/MainPage/achievement.vue')['default']
+    ArticleCard: typeof import('./src/components/MainPage/articleCard.vue')['default']
+    ArticlePage: typeof import('./src/components/MainPage/articlePage.vue')['default']
+    ArtilePage: typeof import('./src/components/MainPage/artilePage.vue')['default']
+    AuthorList: typeof import('./src/components/MainPage/authorList.vue')['default']
+    BasePage: typeof import('./src/components/PersonPage/basePage.vue')['default']
+    Classify: typeof import('./src/components/MainPage/Classify.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElCollapse: typeof import('element-plus/es')['ElCollapse']
@@ -30,16 +35,16 @@ declare module '@vue/runtime-core' {
     ElTabPane: typeof import('element-plus/es')['ElTabPane']
     ElTabs: typeof import('element-plus/es')['ElTabs']
     ElTag: typeof import('element-plus/es')['ElTag']
-    Header: typeof import('./src/components/Header/index.vue')['default']
+    Header: typeof import('./src/components/MainPage/Header.vue')['default']
     HelloWorld: typeof import('./src/components/HelloWorld.vue')['default']
-    Home: typeof import('./src/components/personPage/Home.vue')['default']
-    LeftSidebar: typeof import('./src/components/personPage/leftSidebar.vue')['default']
+    Home: typeof import('./src/components/MainPage/Home.vue')['default']
+    LeftSidebar: typeof import('./src/components/PersonPage/leftSidebar.vue')['default']
     Main: typeof import('./src/components/main.vue')['default']
     Menu: typeof import('./src/components/Menu/index.vue')['default']
-    RightSidebar: typeof import('./src/components/personPage/rightSidebar.vue')['default']
+    RightSidebar: typeof import('./src/components/PersonPage/rightSidebar.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
-    Sidebar: typeof import('./src/components/sidebar.vue')['default']
-    Tag: typeof import('./src/components/Header/components/Tag/index.vue')['default']
+    Sidebar: typeof import('./src/components/MainPage/sidebar.vue')['default']
+    Tag: typeof import('./src/components/MainPage/Tag.vue')['default']
   }
 }

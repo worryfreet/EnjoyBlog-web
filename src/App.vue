@@ -14,7 +14,7 @@
 }
 #app{
   width: 100%;
-  background-color: #efefef;
+  background-color: #F7F7FC;
 }
 
 </style>
