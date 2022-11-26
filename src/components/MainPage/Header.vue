@@ -6,7 +6,7 @@
           <!-- logo -->
           <div class="logo">
             <img class="logo-icon" src="../assets/logo.jpg" />
-            <span class="logo-title">享受每一客</span>
+            <span class="logo-title" @click="gotoMainPage()">享受每一客</span>
           </div>
           <div class="switchTab">个人页</div>
           <!-- 搜索 -->
@@ -28,20 +28,28 @@
           </div>
         </div>
       </div>
-      <Tag/>
+      <Tag v-if="pageType !== 'mainPag'" />
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-import Tag from "./components/Tag/index.vue";
+import Tag from "./Tag.vue";
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
+let pageType = localStorage.getItem('pageType')
+
+const gotoMainPage = () => {
+  router.push({path:'mainPage'})
+  localStorage.setItem('pageType','mainPage')
+}
 </script>
 
 <style scoped lang="scss">
 .header-box {
-  position: fixed;
+  position: sticky;
   width: 100%;
-  height: 110px;
   z-index: 100;
   top: 0;
 }
@@ -57,7 +65,6 @@ import Tag from "./components/Tag/index.vue";
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    background-color: bisque;
     color: #777777;
     .header-left {
       display: flex;
@@ -65,6 +72,7 @@ import Tag from "./components/Tag/index.vue";
       align-items: center;
       .switchTab {
         margin-right: 20px;
+        margin-left: 70px;
       }
     }
     .logo {
@@ -77,12 +85,15 @@ import Tag from "./components/Tag/index.vue";
         margin-left: 20px;
       }
       .logo-title {
+        cursor: pointer;
         font-size: 16px;
         margin-left: 10px;
       }
     }
     .header-right {
       display: flex;
+      font-size: 16px;
+      margin-right: 20px;
       .edit-box {
         margin: 0 10px;
       }

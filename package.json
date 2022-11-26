@@ -12,6 +12,7 @@
     "axios": "^0.27.2",
     "element-plus": "^2.2.13",
     "lib-flexible": "^0.3.2",
+    "mitt": "^3.0.0",
     "pinia": "^2.0.18",
     "postcss-plugin-px2rem": "^0.8.1",
     "vue": "^3.2.25",

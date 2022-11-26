@@ -55,13 +55,15 @@ import rightSidebar from './rightSidebar.vue';
 .main {
   width: 100%;
   display: flex;
-  flex: 2;
+  flex: 4;
   .right-box {
     right: 0;
     width: 268px;
   }
 }
 .center-box {
+  flex: 3;
+
   .center-header {
     padding: 20px;
     background-color: #F9F9F9;
